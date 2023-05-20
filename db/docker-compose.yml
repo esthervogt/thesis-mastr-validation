@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mastrdb:
+    image: postgis/postgis:14-3.3
+    container_name: mastrdb
+    ports:
+      - '5500:5432'
+    environment:
+      POSTGRES_DB: mastrdb
+      POSTGRES_USER: mastrdb
+      POSTGRES_PASSWORD: mastrdb
+    volumes:
+      - etwinVolume:/var/lib/postgresql/data
+
+volumes:
+  etwinVolume:
