@@ -97,6 +97,7 @@ Overall the search is performed in three steps:
 3. Finally, a mapping is created between the MaStR units and solar systems mapped to the same buildings. 
 The following screenshot is an example visualization of a mapping between a MaStR unit (red diamond) and a detected system (polygon with blue filling):
 ![img.png](sample_mapping_result.png)
+
 As mentioned above, check my final report (`report/MastersThesis_VogtEsther.pdf`) for a more detailed and extensive analysis of results for the Munich area.
 
 ## Further References
