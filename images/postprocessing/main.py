@@ -86,7 +86,7 @@ def get_detections_gdf_from_pred_mask(img_name:str, img_tif_ds: DatasetReader) -
 
 
 def run_postprocessing_for_image(img_name:str) -> None:
-    if prediction_exists(img_name) and not detection_exists(img_name=img_name):
+    if prediction_exists(img_name) and not detection_exists(img_name):
         tif_ds_reader = get_img_tif_ds_reader_from_dir(get_results_file_path(cfg.DIR_NAME_RESULTS_PRED_MASK), img_name)
         detection_gdf = get_detections_gdf_from_pred_mask(img_name, tif_ds_reader)
 

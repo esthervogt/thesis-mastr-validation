@@ -89,7 +89,6 @@ def main(use_existing_src_file: bool = False, create_base: bool = True) -> None:
     BuildingsBase = get_base()
     if create_base:
         engine.execute(DropTable(BuildingsBase.__table__, if_exists=True))
-    if not inspect(engine).has_table(BuildingsBase.__table__):
         get_raw_data(use_existing_src_file)
     get_ref_area_data(base=BuildingsBase)
 
