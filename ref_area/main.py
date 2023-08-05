@@ -39,7 +39,7 @@ def main(create_base: bool = False) -> None:
 if __name__ == "__main__":
     start_logging(__file__)
 
-    parser = argparse.ArgumentParser(description='Download raw MaStR data to PG DB.')
+    parser = argparse.ArgumentParser(description='Process reference data.')
     parser.add_argument('--create_base',
                         help='Specify whether the raw data should be extracted again to the public schema.',
                         action='store_true')

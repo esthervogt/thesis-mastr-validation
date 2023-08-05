@@ -54,7 +54,7 @@ def main(date: str = None, create_base: bool = False) -> None:
 if __name__ == "__main__":
     start_logging(__file__)
 
-    parser = argparse.ArgumentParser(description='Download raw MaStR data to PG DB.')
+    parser = argparse.ArgumentParser(description='Process MaStR data.')
     parser.add_argument('--date',
                         help='Specify a datetime of format "yyyymmdd" if an existing download should be used.',
                         type=str,

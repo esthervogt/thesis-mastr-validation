@@ -96,7 +96,7 @@ def main(use_existing_src_file: bool = False, create_base: bool = True) -> None:
 if __name__ == "__main__":
     start_logging(__file__)
 
-    parser = argparse.ArgumentParser(description='Download raw MaStR data to PG DB.')
+    parser = argparse.ArgumentParser(description='Process building data.')
     parser.add_argument('--use_existing_src_file',
                         help='Specify whether an existing pbf file should be used to (re-)create the raw data.',
                         action='store_false')
